@@ -1,0 +1,107 @@
+<!-- Code by bevatsal1122 -->
+<!-- Trust God, Your Code will Work -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upsurge | Hold Your Bit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Kanit:ital,wght@1,800&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/exam.ico">
+</head>
+<body>
+    <div id="title"><h1><span id="title-link">Upsurge</span></h1></div>
+
+    <section class="head-upload">
+
+        <div class="file-container">
+
+            <div class="drop-zone">
+
+                <div class="icon-space">
+                    <img src="/assets/file-icon.png" alt="File Icon" class="center-icon" draggable="false">
+                    <img src="/assets/file-icon.png" alt="File Icon" class="left-icon" draggable="false">
+                    <img src="/assets/file-icon.png" alt="File Icon" class="right-icon" draggable="false">
+                </div>
+
+                <input type="file" id="fileInput">
+
+                <div id="command">Drag a File here or <span id="BrowseButton">Browse</span></div>
+
+            </div>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div id="uploading-text"></div>
+            <div class="upload-bar"></div>
+            <div class="small-upload-bar"></div>
+
+        </div>
+
+        <div class="response-bar">
+
+            <b><p id="file-details"></p></b>
+
+            <div class="response-link">
+                <input type="text" id="fileURL" readonly><img src="/assets/content_copy_black_24dp.svg" id="copyImage" alt="Copy Clipboard" draggable="false"/></input>
+            </div>
+
+            <div class="share-email">
+
+                <b><p id="share-text">Or Share via Email</p></b>
+
+                <div class="form-details">
+
+                    <form id="email-form">
+
+                        <div class="input-box">
+                            <label for="sender-email">Your Email ID</label>
+                            <input type="email" name="sender-email" id="sender-email" required />
+                        </div>
+
+                        <div class="input-box">
+                            <label for="receiver-email">Receiver's Email ID</label>
+                            <input type="email" name="receiver-email" id="receiver-email" required />
+                        </div>
+
+                        <button type="submit" id="send-button">Send</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="image-division">
+
+        <img src="/assets/video-calling.png" alt="Image0" id="image-0" draggable="false">
+        <img src="/assets/chatting.png" alt="Image1" id="image-1" draggable="false">
+        <img src="/assets/dumbbell.png" alt="Image2" id="image-2" draggable="false">
+        <img src="/assets/chatting(1).png" alt="Image3" id="image-3" draggable="false">
+        <img src="/assets/cat.png" alt="Image4" id="image-4" draggable="false">
+        <img src="/assets/listening.png" alt="Image5" id="image-5" draggable="false">
+        <img src="/assets/reading.png" alt="Image6" id="image-6" draggable="false">
+
+    </div>
+    
+    <section class="toast-alert"></section>
+
+    <section id="developer-credits">
+        <big>Upsurge &copy 2022</big><br>
+        Developed with ❤️ by <a href="https://github.com/bevatsal1122" target="_blank"><big>Vatsal Sanchala</big></a>
+    </section>
+
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

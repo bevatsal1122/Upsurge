@@ -1,5 +1,6 @@
 :root {
     --main-bg-color: #161B37;
+    --progress-bar-width: 560px;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     height: 100%;
     user-select: none;
 }
-body, .head-upload {
+body, .drop-zone, .head-upload, #uploading-text, .small-upload-bar {
     display: flex;
     flex-direction: column;
 }
@@ -26,45 +27,200 @@ body, .head-upload {
 .head-upload {
     background-color: white;
     border-radius: 25px;
-    padding: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-top: 4vh;
+    padding: 30px;
+    margin-top: 9.5vh;
     margin-left: 4vw;
     font-family: 'Kanit', sans-serif;
     box-shadow: 0px 20px 20px black;
     width: 560px;
 }
-.download-icon {
-    display: flex;
-    justify-content: center;
-    transform: scale(2.5);
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
-.download-icon img {
-    opacity: 0.5;
-}
-.download-button {
-    display: flex;
+.drop-zone {
+    min-height: 220px;
+    border-radius: 20px;
+    border: 3px dashed black;
+    align-items: center;
     justify-content: center;
 }
-.download-button a {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    font-family: 'Kanit', sans-serif;
-    width: 190px;
-    height: 40px;
+.icon-space {
+    width: 80px;
+    height: 100px;
+}
+.icon-space img {
+    position: absolute;
+    width: 70px;
+    transition: transform 0.3s;
+}
+.center-icon {
+    z-index: 1;
+}
+.draggedTrue .icon-space .left-icon, .draggedTrue .icon-space .right-icon {
+    filter: grayscale(50%);
+}
+.draggedTrue .icon-space .left-icon {
+    transform: rotate(9deg) translateX(22px) scale(0.9);
+    transform-origin: bottom;
+}
+.draggedTrue .icon-space .right-icon {
+    transform: rotate(-9deg) translateX(-22px) scale(0.9);
+    transform-origin: bottom;
+}
+.draggedTrue .icon-space .center-icon {
+    transform: translateY(-3px) scale(0.95);
+}
+.draggedTrue {
     background-color: #93a2ee;
-    margin-top: 8px;
-    padding-top: 6px;
+    transition: all 0.5s ease;
+}
+#command {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+}
+#fileInput {
+    display: none;
+}
+#BrowseButton {
+    color: darkblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.progress-bar {
+    width: var(--progress-bar-width);
+    height: 70px;
+    margin-top: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.progress-bar .upload-bar {
+    background-color: #93a2ee;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-bar .small-upload-bar {
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    border-radius: 2px;
+    width: 500px;
+    height: 4px;
+    transition: transform 0.6s ease-in;
+    margin-right: 5px;
+    margin-top: 45px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+#uploading-text {
+    font-family: 'Kanit', sans-serif;
     font-size: 21px;
+    position: absolute;
+    margin: auto 210px;
+    margin-top: -10px;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
 }
-#thank-you {
-    margin-top: 30px;
+.response-bar {
+    display: none;
+    width: 560px;
 }
+.response-bar .response-link input {
+    width: 100%;
+    background-color: #93a2ee;
+    border-radius: 10px;
+    border: 3px dashed #161B37;
+    padding-left: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    font-weight: bold;
+    outline: none;
+    cursor: default;
+}
+.response-link {
+    position: relative;
+}
+.response-bar .response-link img {
+    position: absolute;
+    right: 5.4px;
+    top: 9.5px;
+    background-color: #93a2ee;
+    cursor: pointer;
+}
+.response-bar ::selection {
+    color: darkgray;
+    background-color: black;
+}
+#fileURL {
+    font-size: 17px;
+}
+.share-email {
+    text-align: center;
+}
+.share-text {
+    text-align: center;
+}
+.form-details {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.form-details form {
+    width: 100%;
+    border: 2px dashed black;
+    border-radius: 20px;
+    padding: 20px;
+}
+.form-details input {
+    width: 50%;
+}
+.form-details .input-box {
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+.form-details .input-box input {
+    border: none;
+    font-family: Arial black;
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.form-details .input-box label {
+    font-size: 17px;
+}
+.form-details button {
+    background-color: darkgray;
+    border: 4px solid darkgray;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.toast-alert {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    border-radius: 30px;
+    left: -16%;
+    transition: transform 0.8s;
+    bottom: 20px;
+    box-shadow: 1px 1px 1px darkgray;
+    padding: 10px 20px;
+    background-color: #93a2ee;
+}
+
 .image-division img {
     position: absolute;
     float: right;
@@ -106,7 +262,7 @@ body, .head-upload {
 }
 #developer-credits {
     color: white;
-    margin-top: 22.2vh;
+    margin-top: 27vh;
     font-weight: bold;
     text-align: center;
     margin-bottom: 3.3vh;
@@ -126,6 +282,17 @@ body, .head-upload {
     .head-upload {
         width: 45vw;
     }
+    :root {
+        --progress-bar-width: 45vw;
+    }
+    .response-bar {
+        width: 45vw;
+    }
+    .progress-bar .small-upload-bar {
+        width: 420px;
+        height: 4px;
+        margin-right: 4.5px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -139,6 +306,16 @@ body, .head-upload {
     .head-upload {
         width: 75vw;
     }
+    :root {
+        --progress-bar-width: 75vw;
+    }
+    .response-bar {
+        width: 75vw;
+    }
+    .progress-bar .small-upload-bar {
+        width: 70%;
+        margin-right: 5px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -150,15 +327,55 @@ body, .head-upload {
         width: 75vw;
         margin: 4vh auto auto auto;
     }
+    #command {
+        font-size: 4.8vw;
+    }
     #title {
         font-size: 18px;
     }
     #developer-credits {
-        margin-top: 20vh;
-        margin-bottom: 3vh;
+        margin-top: 15vh;
+        margin-bottom: 3.5vh;
     }
     .image-division img {
         display: none;
     }
+    .progress-bar .small-upload-bar {
+        margin-right: 1px;
+    }
+    #uploading-text {
+        font-size: 15px;    
+        text-align: center;
+    }
+    .form-details .input-box {
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+    .form-details .input-box input {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .form-details .input-box label {
+        text-align: center;
+    }
+    .toast-alert {
+        left: -75%;
+    }
+    .progress-bar {
+        height: 60px;
+    }
 }
 
+@media screen and (max-width: 550px) {
+    .toast-alert {
+        left: -85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .toast-alert {
+        left: -100%;
+    }
+}

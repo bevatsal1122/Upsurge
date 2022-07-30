@@ -2,6 +2,9 @@ const express = require('express');
 const { fileController, showFilesController, downloadController, sendEmailController } = require('../controllers');
 const router = express.Router();
 
+router.get('/', (req, res) => {
+    res.render('home');
+})
 router.post('/api/files/upload', fileController.upload);
 router.get('/files/:uuid', showFilesController.show);
 router.get('/files/download/:uuid', downloadController.download);

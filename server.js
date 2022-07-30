@@ -8,15 +8,15 @@ const router = require('./routes/index');
 const PORT = process.env.PORT || 3000;
 const app = express();
 const rateLimiter = rateLimit({
-    windowMs: 10 * 60 * 1000,
-    max: 5,
+    windowMs: 5 * 60 * 1000,
+    max: 1000,
     standardHeaders: true,
     legacyHeaders: false,
 })
 
 app.use(cors());
 app.use(express.json());
-// app.use(rateLimiter);
+app.use(rateLimiter);
 app.use(express.static('public'));
 
 // Database Connection
@@ -29,6 +29,10 @@ app.set('view engine', 'ejs');
 // Routes
 app.use('/', router);
 
-app.listen(PORT, () => {
-    console.log(`App Running at Port ${PORT}`);
-})
+try {
+    app.listen(PORT, () => {
+        console.log(`App Running at Port ${PORT}`);
+    })
+} catch(error) {
+    console.log(error);
+}
