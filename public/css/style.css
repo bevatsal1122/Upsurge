@@ -334,8 +334,8 @@ body, .drop-zone, .head-upload, #uploading-text, .small-upload-bar {
         font-size: 18px;
     }
     #developer-credits {
-        margin-top: 20vh;
-        margin-bottom: 3.5vh;
+        margin-top: 24vh;
+        margin-bottom: 2.5vh;
     }
     .image-division img {
         display: none;
