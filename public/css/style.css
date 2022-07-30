@@ -110,7 +110,7 @@ body, .drop-zone, .head-upload, #uploading-text, .small-upload-bar {
     border-radius: 2px;
     width: 500px;
     height: 4px;
-    transition: transform 0.6s ease-in;
+    transition: transform 0.45s ease-in;
     margin-right: 5px;
     margin-top: 45px;
     transform: scaleX(0);
@@ -313,8 +313,8 @@ body, .drop-zone, .head-upload, #uploading-text, .small-upload-bar {
         width: 75vw;
     }
     .progress-bar .small-upload-bar {
-        width: 68%;
-        margin-right: 4.8px;
+        width: 64%;
+        margin-right: 4.6px;
     }
 }
 
@@ -334,8 +334,8 @@ body, .drop-zone, .head-upload, #uploading-text, .small-upload-bar {
         font-size: 18px;
     }
     #developer-credits {
-        margin-top: 24vh;
-        margin-bottom: 2.5vh;
+        margin-top: 25vh;
+        margin-bottom: 2.4vh;
     }
     .image-division img {
         display: none;
