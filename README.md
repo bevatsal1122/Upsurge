@@ -110,6 +110,7 @@ Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded
 Project Link: https://github.com/bevatsal1122/Upsurge
 
 Deployment Link: https://upsurge-holdyourbit.herokuapp.com
+
 <br>
 
 [Node.js]: https://img.shields.io/badge/Node.js-35495E?style=for-the-badge&logo=nodedotjs&logoColor=4FC08D
