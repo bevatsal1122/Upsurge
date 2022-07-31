@@ -110,7 +110,7 @@ body, .drop-zone, .head-upload, #uploading-text, .small-upload-bar {
     border-radius: 2px;
     width: 500px;
     height: 4px;
-    transition: transform 0.45s ease-in;
+    transition: transform 0.4s ease-in;
     margin-right: 5px;
     margin-top: 45px;
     transform: scaleX(0);
@@ -334,7 +334,7 @@ body, .drop-zone, .head-upload, #uploading-text, .small-upload-bar {
         font-size: 18px;
     }
     #developer-credits {
-        margin-top: 25vh;
+        margin-top: 25.5vh;
         margin-bottom: 2.4vh;
     }
     .image-division img {
