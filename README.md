@@ -13,7 +13,7 @@
 </div>
 
 ## About The Project
-Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded after which you get a Download Link. You can also share the resource Link through Email by adding you Email ID and Receiver's Email ID. Receiver gets an Email with Download Page Link and File Information. Using Download Page, you can download the File anywhere anytime within 48 hours of uploading since the Download Link epxires after 48 hours.
+Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded after which you get a Download Link. You can also share the Resource Link through Email by adding your Email ID and the Receiver's Email ID. The Receiver gets an Email with Download Page Link and File Information. Using Download Page, you can download the File anytime anywhere within 48 hours of uploading since the Download Link expires after 48 hours.
 
 ### Tech. Store
 * [![Node.js][Node.js]][Node-url]
