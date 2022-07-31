@@ -56,6 +56,7 @@ Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded
     SMTP_AUTH_LOGIN = <SMTP-Login>
     SMTP_AUTH_PASS = <SMTP-Master_Password>
    ```
+<br>
 
 ## Interface
 <img src="./ui-images/imageOutput0.png" alt="Image Output 0" />
@@ -64,7 +65,8 @@ Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded
 <img src="./ui-images/imageOutput3.png" alt="Image Output 3" />
 <img src="./ui-images/imageOutput4.png" alt="Image Output 4" />
 
-#### * Suitable for Viewing on all Media Devices 
+#### * Suitable for viewing on all Media Devices 
+<br>
 
 ## Roadmap
 
@@ -99,6 +101,7 @@ Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded
     ```sh
       yarn prod
     ```
+<br>
 
 ## Contact
 
