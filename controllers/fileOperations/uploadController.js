@@ -6,12 +6,12 @@ const path = require('path');
 const storage = multer.diskStorage({
     destination: (req, file, callback) => callback(null, 'uploads/'),
     filename: (req, file, callback) => {
-        const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1E5)}Upsurge${Math.round(Math.random()*1E3)}${path.extname(file.originalname)}`;
+        const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1E5)}Upsurge${Math.round(Math.random() * 1E3)}${path.extname(file.originalname)}`;
         callback(null, uniqueName);
     }
 });
 
-const handleData = multer({storage, limits: {fileSize: 1000000 * 108}});
+const handleData = multer({storage, limits: {fileSize: 1000000 * 53}});
 const uploads = handleData.single('myFile');
 
 const fileController = {
