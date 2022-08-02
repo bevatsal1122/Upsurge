@@ -1,19 +1,19 @@
 <div align="center">
   <img src="./assets/exam.ico" alt="Logo" width="80" height="80">
-
+  
   <h3 align="center">Upsurge | Hold Your Bit</h3>
 
   <p align="center">
     <strong>Developed with ❤️ by Vatsal Sanchala</strong><br>
     <br />
     <br />
-    <a href="https://upsurge-holdyourbit.herokuapp.com/">Upsurge</a>
+    <a href="https://upsurge-holdyourbit.herokuapp.com">Upsurge</a>
 
   </p>
 </div>
 
 ## About The Project
-Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded after which you get a Download Link. You can also share the Resource Link through Email by adding your Email ID and the Receiver's Email ID. The Receiver gets an Email with Download Page Link and File Information. Using Download Page, you can download the File anytime anywhere within 48 hours of uploading since the Download Link expires after 48 hours.
+Upsurge is a Quick File Sharing Web App where Files under 50 MB can be uploaded after which you get a Download Link. You can also share the Resource Link through Email by adding your Email ID and the Receiver's Email ID. The Receiver gets an Email with Download Page Link and File Information. Using Download Page, you can download the File anytime anywhere within 24 hours of uploading since the Download Link expires after 24 hours.
 
 ### Tech. Store
 * [![Node.js][Node.js]][Node-url]
@@ -59,11 +59,11 @@ Upsurge is a Quick File Sharing Web App where Files under 100 MB can be uploaded
 <br>
 
 ## Interface
-<img src="./ui-images/imageOutput0.png" alt="Image Output 0" />
-<img src="./ui-images/imageOutput1.png" alt="Image Output 1" />
-<img src="./ui-images/imageOutput2.png" alt="Image Output 2" />
-<img src="./ui-images/imageOutput3.png" alt="Image Output 3" />
-<img src="./ui-images/imageOutput4.png" alt="Image Output 4" />
+<img src="./assets/ui-images/imageOutput0.png" alt="Image Output 0" />
+<img src="./assets/ui-images/imageOutput1.png" alt="Image Output 1" />
+<img src="./assets/ui-images/imageOutput2.png" alt="Image Output 2" />
+<img src="./assets/ui-images/imageOutput3.png" alt="Image Output 3" />
+<img src="./assets/ui-images/imageOutput4.png" alt="Image Output 4" />
 
 #### * Suitable for viewing on all Media Devices 
 <br>
