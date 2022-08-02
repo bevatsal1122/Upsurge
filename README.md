@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/exam.ico" alt="Logo" width="80" height="80">
+  <img src="./assets/ui-images/exam.ico" alt="Logo" width="80" height="80">
   
   <h3 align="center">Upsurge | Hold Your Bit</h3>
 
