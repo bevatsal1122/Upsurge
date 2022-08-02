@@ -1,5 +1,5 @@
 // Code by bevatsal1122
-// Trust God, Your Code will Work
+// Trust God, Your Code Will Work
 
 const dragZone = document.querySelector(".drop-zone");
 const headUpload = document.querySelector(".head-upload");
@@ -60,7 +60,7 @@ const updateProgress = (e) => {
 }
 
 const showLink = ({file, size}) => {
-    fileDetails.innerHTML = `${parseInt(size*0.97)} KB &ensp;●&ensp; Link expires in 48 hours &ensp; ● &ensp; <a href="${file}" target="_blank">Download Page</a>`;
+    fileDetails.innerHTML = `${parseInt(size*0.97)} KB &ensp;●&ensp; Link expires in 24 hours &ensp; ● &ensp; <a href="${file}" target="_blank">Download Page</a>`;
     responseBar.style.display = "block";
     fileURL.value = file;
 }
@@ -75,8 +75,8 @@ copyImage.addEventListener("click", copyLink);
 
 const uploadFile = () => {
     let file = fileInput.files[0];
-    if (parseInt(file.size / 1E6) > 107) {
-        toastAnimation("File_Size <= 100 MB", 20, 180);
+    if (parseInt(file.size / 1E6) > 53) {
+        toastAnimation("File_Size <= 50 MB", 20, 180);
     }
     else {
         let formData = new FormData();
