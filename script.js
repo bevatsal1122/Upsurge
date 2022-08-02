@@ -18,7 +18,7 @@ async function deleteData() {
             }
         }
     }
-    console.log("Operation Successfully Completed");
+    console.log("Operation Completed");
 }
 
 deleteData().then(process.exit);
