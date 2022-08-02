@@ -39,7 +39,7 @@ const sendEmailController = {
                 emailTo: emailAcceptor,
                 downloadLink: `${process.env.HOST}/files/${fileData.UUID}`,
                 size: parseInt(fileData.fileSize/1000),
-                expiry: '48 hours'
+                expiry: '24 hours'
             })
         });
         return res.json({emailStatus: "Email Sent Successfully", code: true});
