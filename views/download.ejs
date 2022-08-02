@@ -27,7 +27,7 @@
         <% if (locals.error) { %>
             <h2><%= locals.error %></h2>
         <% } else { %>
-        <b><p id="file-details"><%= parseInt(locals.fileSize/1024) %> KB &ensp;●&ensp; Link expires in 48 hours &ensp;</p></b>
+        <b><p id="file-details"><%= parseInt(locals.fileSize/1024) %> KB &ensp;●&ensp; Link expires in 24 hours &ensp;</p></b>
         <div class="download-button">
             <a href="<%= downloadLink %>"<button id="download-here">Download File</button></a>
         </div>
