@@ -136,7 +136,7 @@ module.exports = ({emailFrom, emailTo, downloadLink, size, expiry}) => {
                                 </table>
                                 <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">The Resource Owner mentioned your Email ID in the Notification Receiver's List. Upsurge or any of its Services are not responsible for any of the consequences regarding the Resource / Resource Content.<br>
                                 This Email is intended for <b>${emailTo}</b>. Ignore if any other.
-                                <br><br>Thank you for using <a href=""><b>Upsurge</b></a>.</p>
+                                <br><br>Thank you for using <a href="https://upsurge-holdyourbit.herokuapp.com"><b>Upsurge</b></a>.</p>
                                 <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Good luck!! Have a great day ahead :)</p>
                               </td>
                             </tr>
