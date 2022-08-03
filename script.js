@@ -11,7 +11,7 @@ async function deleteData() {
     if (expiredFiles.length) {
         for (const removeFile of expiredFiles) {
             try {
-                fs.unlinkSync(path.join(__dirname, removeFile.filePath));
+//                 fs.unlinkSync(path.join(__dirname, removeFile.filePath));
                 await removeFile.remove();
                 console.log(`File Deleted ${removeFile.fileName}`);
             } catch(error) {
