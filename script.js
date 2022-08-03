@@ -16,6 +16,7 @@ async function deleteData() {
                 console.log(`File Deleted ${removeFile.fileName}`);
             } catch(error) {
                 console.log(`Error Occured ${removeFile.fileName} ${path.join(__dirname, removeFile.filePath)}`);
+                console.log(error);
             }
         }
     }
