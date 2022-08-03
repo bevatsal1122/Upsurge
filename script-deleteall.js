@@ -10,7 +10,7 @@ async function deleteData() {
     if (allFiles.length) {
         for (const removeFile of allFiles) {
             try {
-//                 fs.unlinkSync(path.join(__dirname, removeFile.filePath));
+                fs.unlinkSync(path.join(__dirname, removeFile.filePath));
                 await removeFile.remove();
                 console.log(`File Deleted ${removeFile.fileName} ${removeFile.filePath}`);
             } catch(error) {
