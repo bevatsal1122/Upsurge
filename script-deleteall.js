@@ -1,5 +1,6 @@
 const connectDB = require('./config/database');
 const File = require('./models/file');
+const path = require('path');
 const fs = require('fs');
 
 connectDB();
@@ -9,11 +10,12 @@ async function deleteData() {
     if (allFiles.length) {
         for (const removeFile of allFiles) {
             try {
-                fs.unlinkSync(removeFile.filePath);
+//                 fs.unlinkSync(path.join(__dirname, removeFile.filePath));
                 await removeFile.remove();
                 console.log(`File Deleted ${removeFile.fileName} ${removeFile.filePath}`);
             } catch(error) {
-                console.log(`Error Occured ${removeFile.fileName} ${removeFile.filePath}`);
+                console.log(`Error Occured ${removeFile.fileName} ${path.join(__dirname, removeFile.filePath)}`);
+                console.log(error);
             }
         }
     }
