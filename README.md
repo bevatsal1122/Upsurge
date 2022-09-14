@@ -105,7 +105,7 @@ Upsurge is a Quick File Sharing Web App where Files under 50 MB can be uploaded 
 
 ## Contact
 
-[Vatsal Sanchala](https://www.linkedin.com/in/bevatsal1122/) - bevatsal1122@gmail.com
+[Vatsal Sanchala](https://www.linkedin.com/in/bevatsal1122/) - heyvatsal1506@gmail.com
 
 Project Link: https://github.com/bevatsal1122/Upsurge
 
